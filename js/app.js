@@ -133,7 +133,7 @@ if (fifthQuestion == 'yes' || fifthQuestion == 'y') {
   alert('Well, looks like somebody got a wrong answer!');
 } else {
     // console.log('Ok fine, just go in' + userName + '.')
-  alert('Ok fine, just go in' + userName + '.')
+  alert('Ok fine, just go in ' + userName + '.')
 }
 
 let finalMessage = alert('All done with the questions ' + userName + '. Take a look around!');
