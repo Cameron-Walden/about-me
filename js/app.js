@@ -65,7 +65,7 @@ if(fifthQuestion == "Sandman" || fifthQuestion == "sandman") {
 
 let finalMessage = alert("All done with the questions. Take a look around!")*/
 
-/*let firstQuestionOriginal = prompt('Did I originally go to culinary school?');
+let firstQuestionOriginal = prompt('Did I originally go to culinary school?');
 // console.log(disneylandOriginal);
 let firstQuestion = firstQuestionOriginal.toLowerCase();
 console.log(firstQuestion);
@@ -136,4 +136,4 @@ if (fifthQuestion == 'yes' || fifthQuestion == 'y') {
   alert('Ok fine, just go in' + userName + '.')
 }
 
-let finalMessage = alert('All done with the questions ' + userName + '. Take a look around!');*/
+let finalMessage = alert('All done with the questions ' + userName + '. Take a look around!');
