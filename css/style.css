@@ -23,9 +23,13 @@ nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
 
-footer {
-    padding: 10em;
+a:visited {
+    color: black;
 }
 
 img {
@@ -45,14 +49,22 @@ img {
 
 #dontePic {
     filter: drop-shadow(15px 15px 4px black);
-    padding: 4em;
+    padding: 2em;
 }
 
 #donteInfo {
-    font-size: 20px;;
+    font-size: 20px;
 }
 
-#quarkPic {
+#milPic {
     filter: drop-shadow(15px 15px 4px black);
-    padding: 3em
+    padding: 2em;
+}
+
+#milInfo{
+    font-size: 20px;
+}
+
+footer {
+    padding: 10em;
 }
