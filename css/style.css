@@ -20,7 +20,7 @@ nav {
     border: 1px solid black;
     background-color: rgb(179, 170, 158);
     margin-bottom: 5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
@@ -30,12 +30,6 @@ a {
 
 a:visited {
     color: black;
-}
-
-img {
-    width:  500px;
-    height: 500px;
-    object-fit: cover;
 }
 
 #bio {
@@ -54,17 +48,21 @@ img {
 
 #donteInfo {
     font-size: 20px;
+    margin-bottom: 10px;;
 }
 
-#milPic {
+footer {
+    margin: 2em;
+    border: 1px solid black;
+    }
+
+/*#milPic {
     filter: drop-shadow(15px 15px 4px black);
     padding: 2em;
 }
 
-/*#milInfo{
+#milInfo{
     font-size: 20px;
 }*/
 
-/*footer {
-    padding: 10em;
-}*/
+
