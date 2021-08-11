@@ -65,7 +65,7 @@ if(fifthQuestion == "Sandman" || fifthQuestion == "sandman") {
 
 let finalMessage = alert("All done with the questions. Take a look around!")*/
 
-let firstQuestionOriginal = prompt('Hi' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- did I originally go to culinary school?');
+let firstQuestionOriginal = prompt('Hi ' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- Did I originally go to culinary school?');
 // console.log(dfirstQuestionOriginal);
 let firstQuestion = firstQuestionOriginal.toLowerCase();
 console.log(firstQuestion);
