@@ -1,6 +1,6 @@
 'use strict'
 
-let userName = prompt("Welcome to my about me page! What's your name?");
+let userName = prompt("Welcome to my About Me page! What's your name?");
 // console.log(userName);
 
 
@@ -65,8 +65,8 @@ if(fifthQuestion == "Sandman" || fifthQuestion == "sandman") {
 
 let finalMessage = alert("All done with the questions. Take a look around!")*/
 
-let firstQuestionOriginal = prompt('Did I originally go to culinary school?');
-// console.log(disneylandOriginal);
+let firstQuestionOriginal = prompt('Hi' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- did I originally go to culinary school?');
+// console.log(dfirstQuestionOriginal);
 let firstQuestion = firstQuestionOriginal.toLowerCase();
 console.log(firstQuestion);
 
