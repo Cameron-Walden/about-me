@@ -1,83 +1,83 @@
 'use strict'
 
-let gotQuestionCorrect = 0;
-let bestPossibleScore = 7;
+// let gotQuestionCorrect = 0;
+// let bestPossibleScore = 7;
 
-let userName = prompt("Welcome to my About Me page! What's your name?");
-// console.log(userName);
+// let userName = prompt("Welcome to my About Me page! What's your name?");
+// // console.log(userName);
 
-let firstQuestionOriginal = prompt('Hi ' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- Did I originally go to culinary school?');
-let firstQuestion = firstQuestionOriginal.toLowerCase();
-//console.log(firstQuestion);
+// let firstQuestionOriginal = prompt('Hi ' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- Did I originally go to culinary school?');
+// let firstQuestion = firstQuestionOriginal.toLowerCase();
+// //console.log(firstQuestion);
 
-if (firstQuestion === 'yes' || firstQuestion === 'y') {
-  alert('I enjoy cooking, but I didn\'t go to school for it. Have you seen Roadrunner?')
-} else if (firstQuestion=== 'no' || firstQuestion === 'n') {
-  alert('You\'re right! I originally went to school for music!');
-  gotQuestionCorrect++;
-} else {
-  alert("We're playing this game whether you like it or not " + userName + '.')
-}
+// if (firstQuestion === 'yes' || firstQuestion === 'y') {
+//   alert('I enjoy cooking, but I didn\'t go to school for it. Have you seen Roadrunner?')
+// } else if (firstQuestion=== 'no' || firstQuestion === 'n') {
+//   alert('You\'re right! I originally went to school for music!');
+//   gotQuestionCorrect++;
+// } else {
+//   alert("We're playing this game whether you like it or not " + userName + '.')
+// }
 
-let secondQuestionOriginal = prompt('Did I ever work at Stumptown?');
-let secondQuestion = secondQuestionOriginal.toLowerCase();
+// let secondQuestionOriginal = prompt('Did I ever work at Stumptown?');
+// let secondQuestion = secondQuestionOriginal.toLowerCase();
 
-if (secondQuestion == 'yes' || secondQuestion == 'y') {
-    // console.log('I did! I enjoyed that job a lot.')
-  alert('I did! I enjoyed that job a lot.')
-  gotQuestionCorrect++;
-} else if (secondQuestion == 'no' || secondQuestion == 'n') {
-    // console.log('Ok can YOU tell me where I worked then?')
-  alert('Ok can YOU tell me where I worked then?');
-} else {
-    // console.log("We're playing this game whether you like it or not " + username + ".");
-  alert("We're playing this game whether you like it or not " + userName + ".")
-}
+// if (secondQuestion == 'yes' || secondQuestion == 'y') {
+//     // console.log('I did! I enjoyed that job a lot.')
+//   alert('I did! I enjoyed that job a lot.')
+//   gotQuestionCorrect++;
+// } else if (secondQuestion == 'no' || secondQuestion == 'n') {
+//     // console.log('Ok can YOU tell me where I worked then?')
+//   alert('Ok can YOU tell me where I worked then?');
+// } else {
+//     // console.log("We're playing this game whether you like it or not " + username + ".");
+//   alert("We're playing this game whether you like it or not " + userName + ".")
+// }
 
-let thirdQuestionOriginal = prompt('Do I have a pet iguana?');
-let thirdQuestion = thirdQuestionOriginal.toLowerCase();
+// let thirdQuestionOriginal = prompt('Do I have a pet iguana?');
+// let thirdQuestion = thirdQuestionOriginal.toLowerCase();
 
-if (thirdQuestion == 'yes' || thirdQuestion == 'y') {
-    // console.log('EHHHH(That\'s a buzzer sound btw)! I have a dog. ');
-  alert('EHHHH(That\'s a buzzer sound btw)! I have a dog. ');
-} else if (thirdQuestion == 'no' || thirdQuestion == 'n') {
-    // console.log('Yep! I have an awesome dog named Donte!')
-  alert('Yep! I have an awesome dog named Donte!');
-  gotQuestionCorrect++;
-} else {
-    // console.log('Come on ' + username + '. This isn\'t the first time we\'ve been through this. I wanted a simple yes or no.');
-  alert('Come on ' + userName + '. This isn\'t the first time we\'ve been through this. I wanted a simple yes or no.');
-}
+// if (thirdQuestion == 'yes' || thirdQuestion == 'y') {
+//     // console.log('EHHHH(That\'s a buzzer sound btw)! I have a dog. ');
+//   alert('EHHHH(That\'s a buzzer sound btw)! I have a dog. ');
+// } else if (thirdQuestion == 'no' || thirdQuestion == 'n') {
+//     // console.log('Yep! I have an awesome dog named Donte!')
+//   alert('Yep! I have an awesome dog named Donte!');
+//   gotQuestionCorrect++;
+// } else {
+//     // console.log('Come on ' + username + '. This isn\'t the first time we\'ve been through this. I wanted a simple yes or no.');
+//   alert('Come on ' + userName + '. This isn\'t the first time we\'ve been through this. I wanted a simple yes or no.');
+// }
 
-let fourthQuestionOriginal = prompt('Do you think I like graphic novels?');
-let fourthQuestion = fourthQuestionOriginal.toLowerCase();
+// let fourthQuestionOriginal = prompt('Do you think I like graphic novels?');
+// let fourthQuestion = fourthQuestionOriginal.toLowerCase();
 
-if (fourthQuestion == 'yes' || fourthQuestion == 'y') {
-    // console.log('You\'re right! One of my favorites is The Sandman series by Neil Gaiman!)
-  alert('You\'re right! One of my favorites is The Sandman series by Neil Gaiman!')
-  gotQuestionCorrect++;
-} else if (fourthQuestion == 'no' || fourthQuestion == 'n') {
-    // console.log('Well, looks like you gotta read my about me section then huh?');
-  alert('Well, looks like you gotta read my About Me section then huh?');
-} else {
-    // console.log('Alright have it your way. We still have one more question to get through though.')
-  alert('Alright have it your way. We still have one more question to get through though.')
-}
+// if (fourthQuestion == 'yes' || fourthQuestion == 'y') {
+//     // console.log('You\'re right! One of my favorites is The Sandman series by Neil Gaiman!)
+//   alert('You\'re right! One of my favorites is The Sandman series by Neil Gaiman!')
+//   gotQuestionCorrect++;
+// } else if (fourthQuestion == 'no' || fourthQuestion == 'n') {
+//     // console.log('Well, looks like you gotta read my about me section then huh?');
+//   alert('Well, looks like you gotta read my About Me section then huh?');
+// } else {
+//     // console.log('Alright have it your way. We still have one more question to get through though.')
+//   alert('Alright have it your way. We still have one more question to get through though.')
+// }
 
-let fifthQuestionOriginal = prompt('Do I like any sports?');
-let fifthQuestion = fifthQuestionOriginal.toLowerCase();
+// let fifthQuestionOriginal = prompt('Do I like any sports?');
+// let fifthQuestion = fifthQuestionOriginal.toLowerCase();
 
-if (fifthQuestion == 'yes' || fifthQuestion == 'y') {
-    // console.log('Yeah! I\'m a big NBA fan! More specifically the Milwuakee Bucks! I actually got to go to Game 3 of the NBA finals this year! It was Milwuakee\'s first finals home game in 50 years!')
-  alert('Yeah! I\'m a big NBA fan! More specifically the Milwuakee Bucks! I actually got to go to Game 3 of the NBA finals this year! It was Milwuakee\'s first finals home game in 50 years!')
-  gotQuestionCorrect++;
-} else if (fifthQuestion == 'no' || fifthQuestion == 'n') {
-    // console.log('Well, looks like somebody got a wrong answer!')
-  alert('Well, looks like somebody got a wrong answer!');
-} else {
-    // console.log('Ok fine, just go in' + userName + '.')
-  alert('Ok fine, just go in ' + userName + '.')
-} 
+// if (fifthQuestion == 'yes' || fifthQuestion == 'y') {
+//     // console.log('Yeah! I\'m a big NBA fan! More specifically the Milwuakee Bucks! I actually got to go to Game 3 of the NBA finals this year! It was Milwuakee\'s first finals home game in 50 years!')
+//   alert('Yeah! I\'m a big NBA fan! More specifically the Milwuakee Bucks! I actually got to go to Game 3 of the NBA finals this year! It was Milwuakee\'s first finals home game in 50 years!')
+//   gotQuestionCorrect++;
+// } else if (fifthQuestion == 'no' || fifthQuestion == 'n') {
+//     // console.log('Well, looks like somebody got a wrong answer!')
+//   alert('Well, looks like somebody got a wrong answer!');
+// } else {
+//     // console.log('Ok fine, just go in' + userName + '.')
+//   alert('Ok fine, just go in ' + userName + '.')
+// } 
 
 
 // // Keeping this other guessing game here for now to see if i like it better
@@ -110,24 +110,24 @@ if (fifthQuestion == 'yes' || fifthQuestion == 'y') {
   //add parseInt to prompt if any errors occur
   //Question 6
 
-let guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
-let attempts = 0;
-let answer = false;
-let randomNumber = Math.floor((Math.random() * 50) + 1);
-for (let i = 0; i < 3; i++) {
-if (attempts === 3){
-    alert('You\'re out of guesses! My number was ' + randomNumber + '!');
-    break;
-  } else if (guessingGame === randomNumber) {
-    alert('Wow! You actually picked ' + randomNumber + '! Good job.');
-    gotQuestionCorrect++;
-    break;
-  } else if (guessingGame < randomNumber) {
-    guessingGame = parseInt(prompt('Too low! Try something greater than ' + guessingGame));
-  } else if (guessingGame > randomNumber) {
-    guessingGame = parseInt(prompt('Not even close! Try something lower than ' + guessingGame + '.'));
+  let guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
+  let attempts = 0;
+  let answer = false;
+  let randomNumber = Math.floor((Math.random() * 50) + 1);
+  for (let i = 0; i < 3; i++) {
+    if (attempts === 3){
+      alert('You\'re out of guesses! My number was ' + randomNumber + '!');
+      break;
+    } else if (guessingGame === randomNumber) {
+      alert('Wow! You actually picked ' + randomNumber + '! Good job.');
+      gotQuestionCorrect++;
+      break;
+    } else if (guessingGame < randomNumber) {
+      guessingGame = parseInt(prompt('Too low! Try something greater than ' + guessingGame));
+    } else if (guessingGame > randomNumber) {
+      guessingGame = parseInt(prompt('Not even close! Try something lower than ' + guessingGame + '.'));
+    }
   }
-}
 
 //Question 7
 let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my favorite graphic novels? I\'ll give you six chances.');
