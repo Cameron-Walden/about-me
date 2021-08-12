@@ -3,11 +3,9 @@
 let gotQuestionCorrect = 0;
 let bestPossibleScore = 7;
 
-function yourName() {
+
 let userName = prompt("Welcome to my About Me page! What's your name?");
 // console.log(userName);
-}
-yourName();
 
 function cookingQuestion() {
   let firstQuestionOriginal = prompt('Hi ' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- Did I originally go to culinary school?');
@@ -188,11 +186,12 @@ let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my
   // gotQuestionCorrect++;
 
   function finalMessage() {
-    let finalScoreMessage = alert('You got ' + gotQuestionCorrect + ' out of 7  questions right, ' + userName + '.');
+    let finalScoreMessage = alert('You got ' + gotQuestionCorrect + ' out of ' + bestPossibleScore + ', ' + userName + '.');
   }
   finalMessage();
 
-    //still working on this part =)
+    //In case I wasnt to come back later and add different responses for different scores the user gets. I Still have a function to let the user know how many points they got above this tho.
+
     /*if(gotQuestionCorrect === bestPossibleScore) {
       alert('You got all of them right... I thought you did\'t know me ' + username + '...')
     } else if (gotQuestionCorrect === 0) {
