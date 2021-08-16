@@ -84,25 +84,24 @@ function numberGame() {
     let answer = false;
     let randomNumber = Math.floor((Math.random() * 50) + 1);
     let guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
-
     for (var i = 0; i < 4; i++) {
-        if (isNaN(guessingGame)) {
+      if (isNaN(guessingGame)) {
         i--;
         guessingGame = parseInt(prompt(userName + '...That\'s not a number. I need a number from you.'));
-    } else if (i === 3){
+      } else if (i === 3){
         alert('Well, you lost that one. I was thinking of ' + randomNumber + '.');
         break;
-    } else if (guessingGame === randomNumber) {
+      } else if (guessingGame === randomNumber) {
         alert('Wow! You actually picked ' + randomNumber + '! Good job, ' + userName + '!');
         gotQuestionCorrect++;
         break;
-    } else if (guessingGame < randomNumber) {
+      } else if (guessingGame < randomNumber) {
         guessingGame = parseInt(prompt('Guess again! Try something greater than ' + guessingGame + '.'));
-    } else if (guessingGame > randomNumber) {
+      } else if (guessingGame > randomNumber) {
         guessingGame = parseInt(prompt('Not even close! Try something lower than ' + guessingGame + '.'));
+      }
     }
-    }
-}
+  }
 numberGame();
 
 function finalQuestion() {
