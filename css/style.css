@@ -1,22 +1,17 @@
 body {
-    background-color: rgb(221, 230, 214);
-    /* max-width: 960px; */
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4em;
-    padding: .2em
+    background-color: antiquewhite
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    background-color: rgb(179, 170, 158);
-    /* margin-bottom: 5em; */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+    background-color: rgb(221, 221, 207);
+    height: 300px;
+    width: 150px;
+    border-radius: 150px;
+    text-align: center;
+    box-shadow: 5px 10px 15px  black;
+    position: relative;
+    left: 10px;
 }
 
 a {
@@ -28,79 +23,88 @@ a:visited {
     color: black;
 }
 
-#bio {
-    padding: 2em;
-    font-size: 20px;
-}
+header ul li {
+    font-weight: bold;
+    line-height: 5em;
+  }
 
-#gumbyPic {
-    filter: drop-shadow(15px 15px 4px black);
-}
-
-/* .history {
+  main {
     float: left;
-    position: relative;
-    left: 1500px;
+    width: 85%;
+    margin-left: 2.5%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.donteContainer {
-    padding: 20px 40px 40px;
-    max-width: 640px;
-    display: flex;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 5px 10px 15px black; 
+} 
+
+  p {
+    height: 190px;
+    overflow: auto;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    background-color: rgba(219, 209, 209, 0.322);
+    box-shadow: 5px 10px 15px black;
+    line-height: 30px;
 }
 
-.dontePic {
-    margin: 20px 30px 0 0;
-      width: 500px;
-      object-fit: contain;
-      align-self: flex-start;
-      filter: drop-shadow(15px 15px 4px black);
-      border-radius: 30px;
+#byteMe {
+    height: 300px; 
+    width: 300px;
 }
 
-.donteInfo {
-    font-size: 100px;
-    padding-bottom: 3em;
-  } */
+section:nth-child(3) li {
+    list-style-type: circle;
+    list-style-position: inside;
+    font-weight: bold;
+    line-height: 2em;
+    text-indent: 1em;
+} 
 
-/*#dontePic {
-    filter: drop-shadow(15px 15px 4px black);
-    padding: 2em;
+section:nth-child(3) article {
+    width: 30%;
     float: left;
+    margin-left: 3%;
+    height: 450px;
+    background-color: rgba(219, 209, 209, 0.322);
+    text-align: center;
+    box-shadow: 5px 10px 15px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
-#donteInfo {
+h2 {
+    text-align: center;
     font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+#garfPic {
+    box-shadow: none;
+}
+
+#footerInfo {
+    text-align: center;
+    border: none;
+    height: 10px;
+    box-shadow: none;
+    background-color: antiquewhite;
     margin-bottom: 10px;
-    display: inline;
-}*/
-
-    /* .quarkPic {
-        filter: drop-shadow(15px 15px 4px black);
-        position: relative;
-        bottom: 270px;
-        left: 400px;
-        border-radius: 20px;
-    }
-
-    h3 {
-        position: relative;
-        left: 210px;
-        bottom: 50px;
-        text-decoration: underline;
-        font-size: 30px;
-
-    }
-
-.topTenContainer{
-    float: right;
-    padding: 20px 40px 40px;
-    max-width: 640px;
-    display: flex;
-    position: relative;
-    right: 40px;
-    bottom: 20px;
-    font-size: 20px;
-} */
-
-
+}
