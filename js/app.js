@@ -2,8 +2,6 @@
 
 let gotQuestionCorrect = 0;
 let bestPossibleScore = 7;
-
-
 let userName = prompt("Welcome to my About Me page! What's your name?");
 
 function cookingQuestion() {
