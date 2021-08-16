@@ -86,7 +86,7 @@ function numberGame() {
     let guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
     for (var i = 0; i < 4; i++) {
       if (isNaN(guessingGame)) {
-        i--;
+        attempts--;
         guessingGame = parseInt(prompt(userName + '...That\'s not a number. I need a number from you.'));
       } else if (i === 3){
         alert('Well, you lost that one. I was thinking of ' + randomNumber + '.');
