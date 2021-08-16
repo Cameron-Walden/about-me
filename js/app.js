@@ -81,13 +81,11 @@ function sportsQuestion() {
 }
 sportsQuestion();
 
-//   //Question 6
-
 function numberGame() {
     let attempts = 0;
     let answer = false;
     let randomNumber = Math.floor((Math.random() * 50) + 1);
-    var guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
+    let guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
 
     for (var i = 0; i < 4; i++) {
         if (isNaN(guessingGame)) {
@@ -109,8 +107,6 @@ function numberGame() {
 }
 numberGame();
 
-
-// //Question 7
 function finalQuestion() {
 let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my favorite graphic novels? I\'ll give you six chances.');
     let graphicNovels = ['the sandman', 'swamp thing', 'maus', 'from hell', 'safe area gorazde', 'like a velvet glove cast in iron'];
