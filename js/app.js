@@ -5,12 +5,10 @@ let bestPossibleScore = 7;
 
 
 let userName = prompt("Welcome to my About Me page! What's your name?");
-// console.log(userName);
 
 function cookingQuestion() {
   let firstQuestionOriginal = prompt('Hi ' + userName + '. Before you come in, let\'s play a guessing game. Ok- first Question- Did I originally go to culinary school?');
   let firstQuestion = firstQuestionOriginal.toLowerCase();
-//console.log(firstQuestion);
 
   if (firstQuestion === 'yes' || firstQuestion === 'y') {
     alert('I enjoy cooking, but I didn\'t go to school for it. Have you seen Roadrunner?')
@@ -22,138 +20,97 @@ function cookingQuestion() {
   }
 }
 cookingQuestion();
-// gotQuestionCorrect++;
 
 function stumptownQuestion() {
   let secondQuestionOriginal = prompt('Did I ever work at Stumptown?');
   let secondQuestion = secondQuestionOriginal.toLowerCase();
 
   if (secondQuestion == 'yes' || secondQuestion == 'y') {
-      // console.log('I did! I enjoyed that job a lot.')
     alert('I did! I enjoyed that job a lot.')
     gotQuestionCorrect++;
   } else if (secondQuestion == 'no' || secondQuestion == 'n') {
-      // console.log('Ok can YOU tell me where I worked then?')
     alert('Ok can YOU tell me where I worked then?');
   } else {
-      // console.log("We're playing this game whether you like it or not " + username + ".");
     alert("We're playing this game whether you like it or not " + userName + ".")
   }
 }
 stumptownQuestion();
-// gotQuestionCorrect++;
 
 function petQuestion() {
   let thirdQuestionOriginal = prompt('Do I have a pet iguana?');
   let thirdQuestion = thirdQuestionOriginal.toLowerCase();
 
   if (thirdQuestion == 'yes' || thirdQuestion == 'y') {
-      // console.log('EHHHH(That\'s a buzzer sound btw)! I have a dog. ');
     alert('EHHHH(That\'s a buzzer sound btw)! I have a dog. ');
   } else if (thirdQuestion == 'no' || thirdQuestion == 'n') {
-      // console.log('Yep! I have an awesome dog named Donte!')
     alert('Yep! I have an awesome dog named Donte!');
     gotQuestionCorrect++;
   } else {
-      // console.log('Come on ' + username + '. This isn\'t the first time we\'ve been through this. I wanted a simple yes or no.');
     alert('Come on ' + userName + '. This isn\'t the first time we\'ve been through this. I wanted a simple yes or no.');
   }
 }
 petQuestion();
-// gotQuestionCorrect++;
 
 function sandmanQuestion() {
   let fourthQuestionOriginal = prompt('Do you think I like graphic novels?');
   let fourthQuestion = fourthQuestionOriginal.toLowerCase();
 
   if (fourthQuestion == 'yes' || fourthQuestion == 'y') {
-      // console.log('You\'re right! One of my favorites is The Sandman series by Neil Gaiman!)
     alert('You\'re right! One of my favorites is The Sandman series by Neil Gaiman!')
     gotQuestionCorrect++;
   } else if (fourthQuestion == 'no' || fourthQuestion == 'n') {
-      // console.log('Well, looks like you gotta read my about me section then huh?');
     alert('Well, looks like you gotta read my About Me section then huh?');
   } else {
-      // console.log('Alright have it your way. We still have one more question to get through though.')
     alert('Alright have it your way. We still have one more question to get through though.')
   }
 }
 sandmanQuestion();
-// gotQuestionCorrect++;
 
 function sportsQuestion() {
   let fifthQuestionOriginal = prompt('Do I like any sports?');
   let fifthQuestion = fifthQuestionOriginal.toLowerCase();
 
   if (fifthQuestion == 'yes' || fifthQuestion == 'y') {
-      // console.log('Yeah! I\'m a big NBA fan! More specifically the Milwuakee Bucks! I actually got to go to Game 3 of the NBA finals this year! It was Milwuakee\'s first finals home game in 50 years!')
-    alert('Yeah! I\'m a big NBA fan! More specifically the Milwuakee Bucks! I actually got to go to Game 3 of the NBA finals this year! It was Milwuakee\'s first finals home game in 50 years!')
+    alert('Yeah! I\'m a big NBA fan! Go Bucks!')
     gotQuestionCorrect++;
   } else if (fifthQuestion == 'no' || fifthQuestion == 'n') {
-      // console.log('Well, looks like somebody got a wrong answer!')
     alert('Well, looks like somebody got a wrong answer!');
   } else {
-      // console.log('Ok fine, just go in' + userName + '.')
     alert('Ok fine, just go in ' + userName + '.')
   } 
 }
 sportsQuestion();
-// gotQuestionCorrect++;
 
-// Keeping this other guessing game here for now to see if i like it better
-// var guessingGame = prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 2 shots');
-// var answer = false;
-// var randomNumber = Math.floor(Math.random() * 50);
-// let guesses = 4;
-// for(let i = 0; i <= 4; i++) {
-//   if (guessingGame === randomNumber ) {
-//     answer = true;
-//   } else if ( guessingGame < randomNumber ) {
-//     var tooHigh = prompt('Nope it\'s greater than ' + guessingGame);
-//     if (tooHigh === randomNumber) {
-//        answer = true;
+//   //Question 6
 
-//       }
-//     } else if ( guessingGame > randomNumber ) {
-//       var tooLow = prompt('Try again. It\'s less than ' + guessingGame);
-//       if (tooLow === randomNumber) {
-//         answer = true;
-//       }
-//     }
-//     if (answer) {
-//       alert('Wow! you actually got it!');
-//     } else {
-//       alert('Better luck next time! the answer was ' + randomNumber);
-//     }
-//   }
-
-  //add parseInt to prompt if any errors occur
-  //Question 6
-
-  function numberGame() {
-    let guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
+function numberGame() {
     let attempts = 0;
     let answer = false;
     let randomNumber = Math.floor((Math.random() * 50) + 1);
-    for (let i = 0; i < 3; i++) {
-      if (attempts === 3){
-        alert('You\'re out of guesses! My number was ' + randomNumber + '!');
+    var guessingGame = parseInt(prompt('Ok, I\'ve got another game for you. Guess a number between 1 and 50. You get 4 shots'));
+
+    for (var i = 0; i < 4; i++) {
+        if (isNaN(guessingGame)) {
+        i--;
+        guessingGame = parseInt(prompt(userName + '...That\'s not a number. I need a number from you.'));
+    } else if (i === 3){
+        alert('Well, you lost that one. I was thinking of ' + randomNumber + '.');
         break;
-      } else if (guessingGame === randomNumber) {
-        alert('Wow! You actually picked ' + randomNumber + '! Good job.');
+    } else if (guessingGame === randomNumber) {
+        alert('Wow! You actually picked ' + randomNumber + '! Good job, ' + userName + '!');
         gotQuestionCorrect++;
         break;
-      } else if (guessingGame < randomNumber) {
-        guessingGame = parseInt(prompt('Too low! Try something greater than ' + guessingGame));
-      } else if (guessingGame > randomNumber) {
+    } else if (guessingGame < randomNumber) {
+        guessingGame = parseInt(prompt('Guess again! Try something greater than ' + guessingGame + '.'));
+    } else if (guessingGame > randomNumber) {
         guessingGame = parseInt(prompt('Not even close! Try something lower than ' + guessingGame + '.'));
     }
-  }
+    }
 }
 numberGame();
-// gotQuestionCorrect++;
 
-//Question 7
+
+// //Question 7
 function finalQuestion() {
 let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my favorite graphic novels? I\'ll give you six chances.');
     let graphicNovels = ['the sandman', 'swamp thing', 'maus', 'from hell', 'safe area gorazde', 'like a velvet glove cast in iron'];
@@ -183,21 +140,8 @@ let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my
     }
   }
   finalQuestion();
-  // gotQuestionCorrect++;
 
   function finalMessage() {
-    let finalScoreMessage = alert('You got ' + gotQuestionCorrect + ' out of ' + bestPossibleScore + ', ' + userName + '.');
+    let finalScoreMessage = alert('That\'s all she wrote. You got ' + gotQuestionCorrect + ' out of ' + bestPossibleScore + ', ' + userName + '. Come on in. Oh ya...and if you\'re gonna click the links in the nav bar, be prepared to play my guessing game all over again. But then again, maybe then you could shoot for a perfect score.');
   }
   finalMessage();
-
-    //In case I wasnt to come back later and add different responses for different scores the user gets. I Still have a function to let the user know how many points they got above this tho.
-
-    /*if(gotQuestionCorrect === bestPossibleScore) {
-      alert('You got all of them right... I thought you did\'t know me ' + username + '...')
-    } else if (gotQuestionCorrect === 0) {
-      alert('I mean, you got NOTHING right. If you had tried a little harder, I gave you an answer to a later question early on!');
-    } else if (gotQuestionCorrect <= Math.floor(userBestPossibleScore / 2)) {
-      alert('You win some, you lose some.');
-    } else {
-      alert('I hope you\'re content with that.');
-    }*/
