@@ -106,30 +106,29 @@ function numberGame() {
 numberGame();
 
 function finalQuestion() {
-let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my favorite graphic novels? I\'ll give you six chances.');
-    let graphicNovels = ['the sandman', 'swamp thing', 'maus', 'from hell', 'safe area gorazde', 'like a velvet glove cast in iron'];
-    let guesses = 0;
-    let correctAnswer = false;
-  
-    while (guesses < 6){
-      guesses++;
-      if(correctAnswer === false){
-        lastQuestion = prompt('Alright, shoot. What do you think?');
-      }
-      for(let i = 0; i < graphicNovels.length; i++){
-        if(lastQuestion === graphicNovels[i]){
-          correctAnswer = true;
-          break;
-        }
-      }
-      if(correctAnswer){
+  let lastQuestion = alert('Alright. Last one I swear. Can you name just one of my favorite graphic novels? I\'ll give you six chances.');
+  let graphicNovels = ['the sandman', 'swamp thing', 'maus', 'from hell', 'safe area gorazde', 'like a velvet glove cast in iron'];
+  let guesses = 0;
+  let correctAnswer = false;
+  while (guesses < 6){
+    guesses++;
+    if(correctAnswer === false){
+      lastQuestion = prompt('Alright, shoot. What do you think?');
+    }
+    for(let i = 0; i < graphicNovels.length; i++){
+      if(lastQuestion === graphicNovels[i]){
+        correctAnswer = true;
         break;
       }
     }
-    if(guesses === 5 && correctAnswer === false){
-      alert('You couldn\'t even guess one? Here, check these out: ' + graphicNovels);
-    } else if(correctAnswer) {
-      alert('Nice you got one right! All the answers were: ' + graphicNovels);
+    if(correctAnswer){
+      break;
+    }
+  }
+  if(guesses === 5 && correctAnswer === false){
+    alert('You couldn\'t even guess one? Here, check these out: ' + graphicNovels);
+  } else if(correctAnswer) {
+    alert('Nice you got one right! All the answers were: ' + graphicNovels);
       gotQuestionCorrect++;
     }
   }
